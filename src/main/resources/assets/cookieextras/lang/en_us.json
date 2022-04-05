@@ -5,6 +5,10 @@
   "item.cookieextras.cookiegem_shovel": "Cookie Gem Shovel",
   "item.cookieextras.cookiegem_axe": "Cookie Gem Axe",
   "item.cookieextras.cookiegem_hoe": "Cookie Gem Hoe",
+  "item.cookieextras.cookiegem_boots": "Cookie Gem Boots",
+  "item.cookieextras.cookiegem_leggings": "Cookie Gem Leggings",
+  "item.cookieextras.cookiegem_chestplate": "Cookie Gem Chestplate",
+  "item.cookieextras.cookiegem_helmet": "Cookie Gem Helmet",
   "block.cookieextras.cookie_ore": "Cookie Ore",
   "itemGroup.cookieExtrasTab": "Cookie Extras"
 }

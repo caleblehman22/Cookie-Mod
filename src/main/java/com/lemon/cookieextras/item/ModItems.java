@@ -1,6 +1,7 @@
 package com.lemon.cookieextras.item;
 
 import com.lemon.cookieextras.CookieExtras;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
@@ -32,6 +33,22 @@ public class ModItems {
 
     public static final RegistryObject<Item> COOKIEGEM_HOE = ITEMS.register("cookiegem_hoe",
             () -> new HoeItem(ModItemTier.COOKIEGEM, 0, 0f,
+                    new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> COOKIEGEM_BOOTS = ITEMS.register("cookiegem_boots",
+            () -> new ArmorItem(ModArmorMaterial.COOKIEGEM, EquipmentSlotType.FEET,
+                    new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> COOKIEGEM_LEGGINGS = ITEMS.register("cookiegem_leggings",
+            () -> new ArmorItem(ModArmorMaterial.COOKIEGEM, EquipmentSlotType.LEGS,
+                    new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> COOKIEGEM_CHESTPLATE = ITEMS.register("cookiegem_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.COOKIEGEM, EquipmentSlotType.CHEST,
+                    new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> COOKIEGEM_HELMET = ITEMS.register("cookiegem_helmet",
+            () -> new ArmorItem(ModArmorMaterial.COOKIEGEM, EquipmentSlotType.HEAD,
                     new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
 
