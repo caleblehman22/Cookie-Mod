@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "cookieextras:item/cookiegem_hoe"
+  }
+}

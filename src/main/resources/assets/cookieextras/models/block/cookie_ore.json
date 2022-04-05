@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "cookieextras:block/cookie_ore"
+  }
+}
