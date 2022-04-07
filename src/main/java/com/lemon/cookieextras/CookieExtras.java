@@ -1,6 +1,7 @@
 package com.lemon.cookieextras;
 
 import com.lemon.cookieextras.block.ModBlocks;
+import com.lemon.cookieextras.entity.ModEntityTypes;
 import com.lemon.cookieextras.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -40,6 +41,7 @@ public class CookieExtras
         // Register our custom items
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModEntityTypes.register(eventBus);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }

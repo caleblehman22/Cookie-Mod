@@ -16,8 +16,9 @@
   "item.cookieextras.cookiegem_super_helmet": "Hardened Cookie Gem Helmet",
   "block.cookieextras.cookie_ore": "Cookie Ore",
   "itemGroup.cookieExtrasTab": "Cookie Extras",
-  "tooltip.cookieextras.cookiegem_super_helmet": "This helmet is twice as strong as regular Cookie Gem armor and is shiny",
-  "tooltip.cookieextras.cookiegem_super_chestplate": "This chestplate is twice as strong as regular Cookie Gem armor and is shiny.",
-  "tooltip.cookieextras.cookiegem_super_leggings": "These leggings are twice as strong as regular Cookie Gem armor and is shiny.",
-  "tooltip.cookieextras.cookiegem_super_boots": "These boots are twice as strong as regular Cookie Gem armor and is shiny."
+  "tooltip.cookieextras.cookiegem_super_helmet": "§6This helmet is twice as strong as regular Cookie Gem armor and is shiny",
+  "tooltip.cookieextras.cookiegem_super_chestplate": "§6This chestplate is twice as strong as regular Cookie Gem armor and is shiny.",
+  "tooltip.cookieextras.cookiegem_super_leggings": "§6These leggings are twice as strong as regular Cookie Gem armor and is shiny.",
+  "tooltip.cookieextras.cookiegem_super_boots": "§6These boots are twice as strong as regular Cookie Gem armor and is shiny.",
+  "tooltip.cookieextras.cookiegem_armor": "§6This armor is strong, but will never be shiny."
 }

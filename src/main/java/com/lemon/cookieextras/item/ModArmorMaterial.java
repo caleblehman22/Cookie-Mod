@@ -13,8 +13,12 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements IArmorMaterial {
-    COOKIEGEM("cookiegem", 45, new int[]{4, 7, 9, 4}, 20,
+    COOKIEGEM("cookiegem", 45, new int[]{3, 6, 8, 3}, 20,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0f, 0.5f, () -> {
+        return Ingredient.fromItems(ModItems.COOKIEGEM.get());
+    }),
+    COOKIEGEM_SUPER("cookiegem_super", 45, new int[]{4, 7, 9, 4}, 20,
+    SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 8.0f, 1f, () -> {
         return Ingredient.fromItems(ModItems.COOKIEGEM.get());
     });
 
