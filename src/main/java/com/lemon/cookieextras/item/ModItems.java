@@ -1,6 +1,7 @@
 package com.lemon.cookieextras.item;
 
 import com.lemon.cookieextras.CookieExtras;
+import com.lemon.cookieextras.item.custom.SuperArmor;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,6 +14,9 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CookieExtras.MOD_ID);
 
     public static final RegistryObject<Item> COOKIEGEM = ITEMS.register("cookiegem",
+            () -> new Item(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> IRON_COOKIE = ITEMS.register("iron_cookie",
             () -> new Item(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
     public static final RegistryObject<Item> COOKIEGEM_SWORD = ITEMS.register("cookiegem_sword",
@@ -49,6 +53,22 @@ public class ModItems {
 
     public static final RegistryObject<Item> COOKIEGEM_HELMET = ITEMS.register("cookiegem_helmet",
             () -> new ArmorItem(ModArmorMaterial.COOKIEGEM, EquipmentSlotType.HEAD,
+                    new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> COOKIEGEM_SUPER_HELMET = ITEMS.register("cookiegem_super_helmet",
+            () -> new SuperArmor(ModArmorMaterial.COOKIEGEM, EquipmentSlotType.HEAD,
+                    new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> COOKIEGEM_SUPER_CHESTPLATE = ITEMS.register("cookiegem_super_chestplate",
+            () -> new SuperArmor(ModArmorMaterial.COOKIEGEM, EquipmentSlotType.CHEST,
+                    new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> COOKIEGEM_SUPER_LEGGINGS = ITEMS.register("cookiegem_super_leggings",
+            () -> new SuperArmor(ModArmorMaterial.COOKIEGEM, EquipmentSlotType.LEGS,
+                    new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> COOKIEGEM_SUPER_BOOTS = ITEMS.register("cookiegem_super_boots",
+            () -> new SuperArmor(ModArmorMaterial.COOKIEGEM, EquipmentSlotType.FEET,
                     new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
 

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#E#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "cookieextras:iron_cookie"
+    },
+    "E": {
+      "item": "cookieextras:cookiegem_chestplate"
+    }
+  },
+  "result": {
+    "item": "cookieextras:cookiegem_super_chestplate"
+  }
+}
