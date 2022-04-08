@@ -2,6 +2,7 @@ package com.lemon.cookieextras;
 
 import com.lemon.cookieextras.block.ModBlocks;
 import com.lemon.cookieextras.entity.ModEntityTypes;
+import com.lemon.cookieextras.entity.render.CookieMonsterRenderer;
 import com.lemon.cookieextras.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -10,6 +11,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -55,7 +57,7 @@ public class CookieExtras
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COOKIE_MONSTER.get(), CookieMonsterRenderer::new);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

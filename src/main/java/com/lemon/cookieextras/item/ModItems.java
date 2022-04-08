@@ -1,7 +1,9 @@
 package com.lemon.cookieextras.item;
 
 import com.lemon.cookieextras.CookieExtras;
+import com.lemon.cookieextras.entity.ModEntityTypes;
 import com.lemon.cookieextras.item.custom.CookieArmor;
+import com.lemon.cookieextras.item.custom.ModSpawnEgg;
 import com.lemon.cookieextras.item.custom.SuperArmor;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -70,6 +72,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> COOKIEGEM_SUPER_BOOTS = ITEMS.register("cookiegem_super_boots",
             () -> new SuperArmor(ModArmorMaterial.COOKIEGEM_SUPER, EquipmentSlotType.FEET,
+                    new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<ModSpawnEgg> COOKIE_MONSTER_SPAWN_EGG = ITEMS.register("cookie_monster_spawn_egg",
+            () -> new ModSpawnEgg(ModEntityTypes.COOKIE_MONSTER, 0x464F56, 0x1D6336,
                     new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
 
