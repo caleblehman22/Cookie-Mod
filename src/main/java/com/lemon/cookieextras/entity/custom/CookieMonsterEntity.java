@@ -34,6 +34,11 @@ public class CookieMonsterEntity extends ZombieEntity {
     }
 
     @Override
+    protected boolean shouldBurnInDay() {
+        return false;
+    }
+
+    @Override
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
