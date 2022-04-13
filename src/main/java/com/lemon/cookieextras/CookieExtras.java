@@ -6,6 +6,8 @@ import com.lemon.cookieextras.entity.render.CookieMonsterRenderer;
 import com.lemon.cookieextras.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -57,6 +59,9 @@ public class CookieExtras
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
+        event.enqueueWork(() -> {
+            RenderTypeLookup.setRenderLayer(ModBlocks.COOKIE_PLANT.get(), RenderType.getCutout());
+        });
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COOKIE_MONSTER.get(), CookieMonsterRenderer::new);
     }
 

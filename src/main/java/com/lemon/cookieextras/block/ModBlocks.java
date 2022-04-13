@@ -1,10 +1,12 @@
 package com.lemon.cookieextras.block;
 
 import com.lemon.cookieextras.CookieExtras;
+import com.lemon.cookieextras.block.custom.CookiePlantBlock;
 import com.lemon.cookieextras.item.ModItemGroup;
 import com.lemon.cookieextras.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -22,6 +24,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COOKIE_ORE = registerBlock("cookie_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> COOKIE_PLANT = BLOCKS.register("cookie_plant",
+            () -> new CookiePlantBlock(AbstractBlock.Properties.from(Blocks.WHEAT)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

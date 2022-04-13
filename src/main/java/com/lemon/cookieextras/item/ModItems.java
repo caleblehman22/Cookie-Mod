@@ -1,6 +1,7 @@
 package com.lemon.cookieextras.item;
 
 import com.lemon.cookieextras.CookieExtras;
+import com.lemon.cookieextras.block.ModBlocks;
 import com.lemon.cookieextras.entity.ModEntityTypes;
 import com.lemon.cookieextras.item.custom.CookieArmor;
 import com.lemon.cookieextras.item.custom.ModSpawnEgg;
@@ -76,6 +77,10 @@ public class ModItems {
 
     public static final RegistryObject<ModSpawnEgg> COOKIE_MONSTER_SPAWN_EGG = ITEMS.register("cookie_monster_spawn_egg",
             () -> new ModSpawnEgg(ModEntityTypes.COOKIE_MONSTER, 0x464F56, 0x1D6336,
+                    new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> COOKIE_SEED = ITEMS.register("cookie_seed",
+            () -> new BlockItem(ModBlocks.COOKIE_PLANT.get(),
                     new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
 
