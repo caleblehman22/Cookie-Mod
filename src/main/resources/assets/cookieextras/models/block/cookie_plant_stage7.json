@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "cookieextras:block/cookie_plant_stage7"
+  }
+}
