@@ -23,6 +23,9 @@ public class ModItems {
     public static final RegistryObject<Item> IRON_COOKIE = ITEMS.register("iron_cookie",
             () -> new Item(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
+    public static final RegistryObject<Item> HARDENED_IRON = ITEMS.register("hardened_iron",
+            () -> new Item(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
     public static final RegistryObject<Item> COOKIEGEM_SWORD = ITEMS.register("cookiegem_sword",
             () -> new SwordItem(ModItemTier.COOKIEGEM, 3, 1f,
                     new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));

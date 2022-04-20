@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#E#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "cookieextras:hardened_iron_block"
+    },
+    "E": {
+      "item": "minecraft:cookie"
+    }
+  },
+  "result": {
+    "item": "cookieextras:iron_cookie"
+  }
+}
