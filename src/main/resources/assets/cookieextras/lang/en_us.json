@@ -1,5 +1,6 @@
 {
   "item.cookieextras.cookiegem": "Cookie Gem",
+  "item.cookieextras.hardened_iron_ingot": "Hardened Iron Ingot",
   "item.cookieextras.iron_cookie": "Iron Cookie",
   "item.cookieextras.cookiegem_sword": "Cookie Gem Sword",
   "item.cookieextras.cookiegem_pickaxe": "Cookie Gem Pickaxe",
@@ -16,6 +17,7 @@
   "item.cookieextras.cookiegem_super_helmet": "Hardened Cookie Gem Helmet",
   "item.cookieextras.cookie_monster_spawn_egg": "Cookie Monster Spawn Egg",
   "block.cookieextras.cookie_ore": "Cookie Ore",
+  "block.cookieextras.hardened_iron_block": "Hardened Iron Block",
   "itemGroup.cookieExtrasTab": "Cookie Extras",
   "tooltip.cookieextras.cookiegem_super_helmet": "§6This helmet is twice as strong as regular Cookie Gem armor and is shiny",
   "tooltip.cookieextras.cookiegem_super_chestplate": "§6This chestplate is twice as strong as regular Cookie Gem armor and is shiny.",
