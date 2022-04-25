@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cookieextras:item/cookie_seed"
+  }
+}
