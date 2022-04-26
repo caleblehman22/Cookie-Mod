@@ -15,23 +15,21 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class SuperArmor extends ArmorItem {
-    private final EquipmentSlotType slotType;
+public class SuperArmor extends ModArmorItem {
 
     public SuperArmor(IArmorMaterial armorMaterial, EquipmentSlotType slotType, Properties properties) {
         super(armorMaterial, slotType, properties);
-        this.slotType = slotType;
     }
 
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        if (slotType == EquipmentSlotType.HEAD) {
+        if (super.getEquipmentSlot() == EquipmentSlotType.HEAD) {
             tooltip.add(new TranslationTextComponent("tooltip.cookieextras.cookiegem_super_helmet"));
-        } else if (slotType == EquipmentSlotType.CHEST) {
+        } else if (super.getEquipmentSlot() == EquipmentSlotType.CHEST) {
             tooltip.add(new TranslationTextComponent("tooltip.cookieextras.cookiegem_super_chestplate"));
-        } else if (slotType == EquipmentSlotType.LEGS) {
+        } else if (super.getEquipmentSlot() == EquipmentSlotType.LEGS) {
             tooltip.add(new TranslationTextComponent("tooltip.cookieextras.cookiegem_super_leggings"));
-        } else if (slotType == EquipmentSlotType.FEET) {
+        } else if (super.getEquipmentSlot() == EquipmentSlotType.FEET) {
             tooltip.add(new TranslationTextComponent("tooltip.cookieextras.cookiegem_super_boots"));
         }
 
