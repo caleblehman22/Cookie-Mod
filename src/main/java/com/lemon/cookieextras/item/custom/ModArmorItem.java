@@ -54,8 +54,7 @@ public class ModArmorItem extends ArmorItem {
         boolean hasPlayerEffect = !Objects.equals(player.getActivePotionEffect(mapStatusEffect.getPotion()), null);
 
         if (hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addPotionEffect(new EffectInstance(mapStatusEffect.getPotion(), 400, mapStatusEffect.getAmplifier()));
-
+            player.addPotionEffect(new EffectInstance(mapStatusEffect.getPotion(), 400, mapStatusEffect.getAmplifier(), false, false));
             // if(new Random().nextFloat() > 0.6f) { // 40% of damaging the armor! Possibly!
             // Uncomment if you wanna damage armor
             // player.inventory.func_234563_a_(DamageSource.MAGIC, 1f);

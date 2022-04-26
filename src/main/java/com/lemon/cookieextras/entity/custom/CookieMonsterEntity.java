@@ -26,9 +26,9 @@ public class CookieMonsterEntity extends ZombieEntity {
 
     public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
         return MobEntity.func_233666_p_()
-                .createMutableAttribute(Attributes.MAX_HEALTH, 40.0)
+                .createMutableAttribute(Attributes.MAX_HEALTH, 30.0)
                 .createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.33)
-                .createMutableAttribute(Attributes.ATTACK_DAMAGE, 20.0)
+                .createMutableAttribute(Attributes.ATTACK_DAMAGE, 12.5)
                 .createMutableAttribute(Attributes.FOLLOW_RANGE, 50.0)
                 .createMutableAttribute(Attributes.ZOMBIE_SPAWN_REINFORCEMENTS);
     }
