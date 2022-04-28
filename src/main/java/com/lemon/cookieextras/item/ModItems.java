@@ -4,6 +4,7 @@ import com.lemon.cookieextras.CookieExtras;
 import com.lemon.cookieextras.block.ModBlocks;
 import com.lemon.cookieextras.entity.ModEntityTypes;
 import com.lemon.cookieextras.item.custom.CookieArmor;
+import com.lemon.cookieextras.item.custom.CookieBow;
 import com.lemon.cookieextras.item.custom.ModSpawnEgg;
 import com.lemon.cookieextras.item.custom.SuperArmor;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -86,6 +87,11 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.COOKIE_PLANT.get(),
                     new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
+    public static final RegistryObject<Item> COOKIE_ARROW = ITEMS.register("cookie_arrow",
+            () -> new ArrowItem(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> COOKIE_BOW = ITEMS.register("cookie_bow",
+            () -> new CookieBow(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
 
     public static void register(IEventBus eventBus) {
