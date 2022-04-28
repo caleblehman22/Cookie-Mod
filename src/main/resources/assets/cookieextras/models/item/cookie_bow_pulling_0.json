@@ -1,0 +1,6 @@
+{
+  "parent": "cookieextras:item/cookie_bow",
+  "textures": {
+    "layer0": "cookieextras:item/cookie_bow_pulling_0"
+  }
+}

@@ -91,7 +91,7 @@ public class ModItems {
             () -> new ArrowItem(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
     public static final RegistryObject<Item> COOKIE_BOW = ITEMS.register("cookie_bow",
-            () -> new CookieBow(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+            () -> new CookieBow(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP).maxStackSize(1)));
 
 
     public static void register(IEventBus eventBus) {

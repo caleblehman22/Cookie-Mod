@@ -8,9 +8,9 @@ import net.minecraft.item.Items;
 import java.util.function.Predicate;
 
 public class CookieBow extends BowItem {
-    public static final Predicate<ItemStack> COOKIE_ARROWS = (stack) -> {
+    public static final Predicate<ItemStack> COOKIE_ARROWS = ARROWS.or((stack) -> {
         return stack.getItem() == ModItems.COOKIE_ARROW.get();
-    };
+    });
 
     public CookieBow(Properties builder) {
         super(builder);
