@@ -2,6 +2,7 @@ package com.lemon.cookieextras;
 
 import com.lemon.cookieextras.block.ModBlocks;
 import com.lemon.cookieextras.entity.ModEntityTypes;
+import com.lemon.cookieextras.entity.render.CookieArrowRenderer;
 import com.lemon.cookieextras.entity.render.CookieMonsterRenderer;
 import com.lemon.cookieextras.item.ModItems;
 import com.lemon.cookieextras.util.ModItemModelProperties;
@@ -74,6 +75,7 @@ public class CookieExtras
             ModItemModelProperties.makeBow(ModItems.COOKIE_BOW.get());
         });
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COOKIE_MONSTER.get(), CookieMonsterRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COOKIE_ARROW.get(), CookieArrowRenderer::new);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
