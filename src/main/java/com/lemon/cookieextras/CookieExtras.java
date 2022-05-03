@@ -2,7 +2,7 @@ package com.lemon.cookieextras;
 
 import com.lemon.cookieextras.block.ModBlocks;
 import com.lemon.cookieextras.entity.ModEntityTypes;
-import com.lemon.cookieextras.entity.render.CookieArrowRenderer;
+import com.lemon.cookieextras.entity.render.SteelArrowRenderer;
 import com.lemon.cookieextras.entity.render.CookieMonsterRenderer;
 import com.lemon.cookieextras.item.ModItems;
 import com.lemon.cookieextras.util.ModItemModelProperties;
@@ -12,7 +12,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -21,7 +20,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
@@ -75,7 +73,7 @@ public class CookieExtras
             ModItemModelProperties.makeBow(ModItems.COOKIE_BOW.get());
         });
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COOKIE_MONSTER.get(), CookieMonsterRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.COOKIE_ARROW.get(), CookieArrowRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.STEEL_ARROW.get(), SteelArrowRenderer::new);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

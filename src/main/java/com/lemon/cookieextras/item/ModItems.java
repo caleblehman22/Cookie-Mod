@@ -84,8 +84,8 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.COOKIE_PLANT.get(),
                     new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
-    public static final RegistryObject<Item> COOKIE_ARROW = ITEMS.register("cookie_arrow",
-            () -> new CookieArrowItem(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP), 1.5f));
+    public static final RegistryObject<Item> STEEL_ARROW = ITEMS.register("steel_arrow",
+            () -> new SteelArrowItem(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP), 1.5f));
 
     public static final RegistryObject<Item> COOKIE_BOW = ITEMS.register("cookie_bow",
             () -> new CookieBow(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP).maxStackSize(1)));
