@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cookieextras:steel_block"
+    }
+  ],
+  "result": {
+    "item": "cookieextras:steel_ingot",
+    "count": 9
+  }
+}

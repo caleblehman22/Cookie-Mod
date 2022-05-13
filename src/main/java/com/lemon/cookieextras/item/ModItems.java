@@ -21,7 +21,13 @@ public class ModItems {
     public static final RegistryObject<Item> IRON_COOKIE = ITEMS.register("iron_cookie",
             () -> new Item(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
-    public static final RegistryObject<Item> HARDENED_IRON_INGOT = ITEMS.register("hardened_iron_ingot",
+    public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
+            () -> new Item(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
+            () -> new Item(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
+
+    public static final RegistryObject<Item> STEEL_ROD = ITEMS.register("steel_rod",
             () -> new Item(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
     public static final RegistryObject<Item> COOKIEGEM_SWORD = ITEMS.register("cookiegem_sword",
@@ -85,7 +91,7 @@ public class ModItems {
                     new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP)));
 
     public static final RegistryObject<Item> STEEL_ARROW = ITEMS.register("steel_arrow",
-            () -> new SteelArrowItem(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP), 1.5f));
+            () -> new SteelArrowItem(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP), 3f));
 
     public static final RegistryObject<Item> COOKIE_BOW = ITEMS.register("cookie_bow",
             () -> new CookieBow(new Item.Properties().group(ModItemGroup.MORE_COOKIES_GROUP).maxStackSize(1)));

@@ -76,6 +76,26 @@
   "overrides": [
     {
       "predicate": {
+        "cookieextras:pulling": 1
+      },
+      "model": "cookieextras:item/cookie_bow_pulling_0"
+    },
+    {
+      "predicate": {
+        "cookieextras:pulling": 1,
+        "cookieextras:pull": 0.65
+      },
+      "model": "cookieextras:item/cookie_bow_pulling_1"
+    },
+    {
+      "predicate": {
+        "cookieextras:pulling": 1,
+        "cookieextras:pull": 0.9
+      },
+      "model": "cookieextras:item/cookie_bow_pulling_2"
+    },
+    {
+      "predicate": {
         "cookieextras:steel": 1,
         "cookieextras:pulling": 1
       },
@@ -96,26 +116,6 @@
         "cookieextras:pull": 0.9
       },
       "model": "cookieextras:item/cookie_bow_pulling_02"
-    },
-    {
-      "predicate": {
-        "cookieextras:pulling": 1
-      },
-      "model": "cookieextras:item/cookie_bow_pulling_0"
-    },
-    {
-      "predicate": {
-        "cookieextras:pulling": 1,
-        "cookieextras:pull": 0.65
-      },
-      "model": "cookieextras:item/cookie_bow_pulling_1"
-    },
-    {
-      "predicate": {
-        "cookieextras:pulling": 1,
-        "cookieextras:pull": 0.9
-      },
-      "model": "cookieextras:item/cookie_bow_pulling_2"
     }
   ]
 }

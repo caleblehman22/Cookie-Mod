@@ -7,10 +7,10 @@
   ],
   "key": {
     "#": {
-      "item": "cookieextras:hardened_iron_ingot"
+      "item": "cookieextras:steel_ingot"
     }
   },
   "result": {
-    "item": "cookieextras:hardened_iron_block"
+    "item": "cookieextras:steel_block"
   }
 }

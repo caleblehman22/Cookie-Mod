@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "cookieextras:block/hardened_iron_block"
+    "all": "cookieextras:block/steel_block"
   }
 }

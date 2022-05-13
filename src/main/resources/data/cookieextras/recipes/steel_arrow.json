@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#",
+    "X"
+  ],
+  "key": {
+    "#": {
+      "item": "cookieextras:steel_rod"
+    },
+    "X": {
+      "item": "cookieextras:steel_nugget"
+    }
+  },
+  "result": {
+    "item": "cookieextras:steel_arrow",
+    "count": 4
+  }
+}

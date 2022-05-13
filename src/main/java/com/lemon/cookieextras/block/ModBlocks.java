@@ -25,7 +25,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> COOKIE_ORE = registerBlock("cookie_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
-    public static final RegistryObject<Block> HARDENED_IRON_BLOCK = registerBlock("hardened_iron_block",
+    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(AbstractBlock.Properties.create(Material.IRON).harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(6f)));
 
     public static final RegistryObject<Block> COOKIE_PLANT = BLOCKS.register("cookie_plant",
